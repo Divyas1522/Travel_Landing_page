@@ -1,0 +1,16 @@
+# .gitignore
+# General
+node_modules/
+dist/
+build/
+.env
+.env.local
+
+# Ignore .env files in subfolders
+frontend/.env
+Backend/.env
+
+# Logs and temp files
+*.log
+.vscode/
+.DS_Store
