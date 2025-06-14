@@ -75,44 +75,44 @@ const TravelHomePage = () => {
                                 boxShadow: '0 6px 20px rgba(0,0,0,0.2)',
                                 transform: 'scale(1.05)',
                             }
-                            }
                         }
-                            >
-                            Book Now
+                        }
+                    >
+                        Book Now
                     </Box>
-        </Container>
+                </Container>
             </Box >
 
-    {/* Features Section */ }
-    < Container maxWidth = "lg" sx = {{ py: 3 }}>
-        <Grid container spacing={4} justifyContent="center" textAlign="center ">
-            {['Easy Booking', 'Curated Destinations', 'Trusted Support'].map((item, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
-                    <Paper
-                        elevation={0}
-                        sx={{
-                            color: '#0072ff',
-                            p: 3,
-                            borderRadius: 2,
-                            height: '100%',
-                            bgcolor: '#f0f4f8',
-                            transition: 'box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out',
-                            '&:hover': {
-                                boxShadow: 3,
-                                bgcolor: '#ced4da',
-                            },
-                        }}
-                    >
-                        <Typography variant="h6">{item}</Typography>
-                    </Paper>
+            {/* Features Section */}
+            < Container maxWidth="lg" sx={{ py: 3 }}>
+                <Grid container spacing={4} justifyContent="center" textAlign="center ">
+                    {['Easy Booking', 'Curated Destinations', 'Trusted Support'].map((item, index) => (
+                        <Grid item xs={12} sm={6} md={4} key={index}>
+                            <Paper
+                                elevation={0}
+                                sx={{
+                                    color: '#0072ff',
+                                    p: 3,
+                                    borderRadius: 2,
+                                    height: '100%',
+                                    bgcolor: '#f0f4f8',
+                                    transition: 'box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out',
+                                    '&:hover': {
+                                        boxShadow: 3,
+                                        bgcolor: '#ced4da',
+                                    },
+                                }}
+                            >
+                                <Typography variant="h6">{item}</Typography>
+                            </Paper>
+                        </Grid>
+                    ))}
                 </Grid>
-            ))}
-        </Grid>
             </Container >
 
-    {/* Popular Destinations */ }
-    < Container sx = {{ mt: 8 }}>
-                <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 800,  color  : 'teal',  fontFamily : 'Poppins' }}>
+            {/* Popular Destinations */}
+            < Container sx={{ mt: 8 }}>
+                <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 800, color: 'teal', fontFamily: 'Poppins' }}>
                     Explore Most Popular Destinations
                 </Typography>
                 <Typography align="center" sx={{ mb: 4 }}>
@@ -121,12 +121,12 @@ const TravelHomePage = () => {
                 <DestinationList />
             </Container >
 
-    {/* Advantages Section */ }
-    < AdvantagesSection />
+            {/* Advantages Section */}
+            < AdvantagesSection />
 
-    {/* Top Selling Tour Packages */ }
-    < Container sx = {{ mt: 8 }}>
-                <Typography variant="h4" align="center" gutterBottom  sx={{ fontWeight: 800, color: 'teal', fontFamily: 'Poppins' }}>
+            {/* Top Selling Tour Packages */}
+            < Container sx={{ mt: 8 }}>
+                <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 800, color: 'teal', fontFamily: 'Poppins' }}>
                     Top Selling Tour Packages of India
                 </Typography>
                 <Typography align="center" sx={{ mb: 4 }}>
@@ -135,7 +135,8 @@ const TravelHomePage = () => {
                 <TopPackages />
             </Container >
 
-    <TestimonialsSection />
+            {/* Testimonials Section */}
+            <TestimonialsSection />
         </Box >
     );
 };
